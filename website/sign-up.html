@@ -11,6 +11,45 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/modernizr.min.js"></script>
+	<style>
+	  <!-- 
+	       Style information for the sign-up form.  
+	       This should probably be improved and put in a CSS file somewhere instead
+	    -->
+	  form#signup_form {
+	  margin: 5%;
+	  padding: 1em;
+	  overflow: hidden;
+	  width: 40em;
+	  }
+
+	  #signup_form ul {
+	  list-style-type: none;
+	  padding: 0.5em;
+	  }
+
+	  #signup_form ul li {
+	  clear: both;
+	  margin-bottom: 0.5em;
+	  }
+
+	  label {
+	  display: block;
+	  float: left;
+	  text-align: right;
+	  margin-right: .5em;
+	  width: 10em;
+	  }
+
+	  input.textinput {
+	  width: 30em;
+	  height: 2em;
+	  border: 1 px solid #666;
+	  }
+	  .wrapper {
+	  text-align: center;
+	  }
+	</style>
 </head>
 <body>
 	<header>
@@ -37,6 +76,26 @@
 				<h1>Signup</h1>
 					<p>Artifice is a Woodlawn-based organization with a bold new approach to STEM (science, technology, engineering, and math) education. We seek to use project-based, hands-on learning to endow participants with the tech and entrepreneurial skills, specifically, that will make them the masters of their own destiny.</p>
 					<p>Using the skills they learn at the center to create community-based social enterprises, enabling them to build their skillsets, portfolios, and even businesses, all while benefitting the community. Ultimately, we hope to combine tech and entrepreneurial competencies in a way that will sustainably raise the economic and educational prospects of the neighborhood and surrounding areas.</p>
+					<form id="signup_form">
+					  <fieldset>
+					    <ul>
+					      <li>
+						<label for="firstlast">Name:</label>
+						<input type="text" name="name" id="firstlast" class="textinput">
+					      </li>
+					      <li>
+						<label for="email">E-mail:</label>
+						<input type="email" name="email" id="email" class="textinput">
+					      </li>
+					      <li>
+						<label for="phone">Phone number:</label>
+						<input type="tel" name="tel" id="tel" class="textinput">
+					      </li>
+					      <div class="wrapper">
+						<input type="submit" value="Sign Up!" class="button">
+					      </div>
+					  </fieldset>
+					</form>
 			</div>
 			<div class="clearfix"></div>
 		</div>
