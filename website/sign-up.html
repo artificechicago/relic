@@ -26,6 +26,7 @@
 	  #signup_form ul {
 	  list-style-type: none;
 	  padding: 0.5em;
+	  margin-left: 18%;
 	  }
 
 	  #signup_form ul li {
@@ -46,8 +47,13 @@
 	  height: 2em;
 	  border: 1 px solid #666;
 	  }
+
 	  .wrapper {
 	  text-align: center;
+	  }
+
+	  #comment {
+	  font-family: "Times New Roman", serif;
 	  }
 	</style>
 </head>
@@ -56,7 +62,7 @@
 		<div class="center">
 			<div class="row">
 					<div class="fg2">
-						<h1><a href="index.html">@Artifice</a></h1>
+						<h1><a href="/">@rtifice</a></h1>
 					</div>
 					<div class="nav fg10">
 						<ul>
@@ -76,12 +82,13 @@
 				<h1>Signup</h1>
 					<p>Artifice is a Woodlawn-based organization with a bold new approach to STEM (science, technology, engineering, and math) education. We seek to use project-based, hands-on learning to endow participants with the tech and entrepreneurial skills, specifically, that will make them the masters of their own destiny.</p>
 					<p>Using the skills they learn at the center to create community-based social enterprises, enabling them to build their skillsets, portfolios, and even businesses, all while benefitting the community. Ultimately, we hope to combine tech and entrepreneurial competencies in a way that will sustainably raise the economic and educational prospects of the neighborhood and surrounding areas.</p>
+				<p>Are you interested in becoming a student, or a parent of an interested student?  Are you interested in volunteering?  No matter how you want to get involved, we want to hear from you!  Fill out the form below with your name and contact information, and we'll get in touch.  Feel free to drop by whenever we're open for more information as well, and to give Artifice a try!</p>
 					<form id="signup_form" method="post">
 					  <fieldset>
 					    <ul>
 					      <li>
 						<label for="firstlast">Name:</label>
-						<input type="text" name="name" id="firstlast" class="textinput">
+						<input type="text" name="name" id="firstlast" class="textinput" required>
 					      </li>
 					      <li>
 						<label for="email">E-mail:</label>
@@ -101,6 +108,11 @@
 						  <option value="other">Other</option>
 						</select>
 					      </li>
+					      <li>
+						<label for="comment">Comments or Questions:</label>
+						<textarea id="comment" name="comment" rows="5" cols="35"></textarea>
+					      </li>
+					    </ul>
 					      <div class="wrapper">
 						<input type="submit" value="Sign Up!" class="button">
 					      </div>
